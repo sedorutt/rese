@@ -14,8 +14,6 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $shops = Shop::get(['id','image']);
-
-        return view('menu',compact('shops'));
+        return view('menu');
     }
 }
